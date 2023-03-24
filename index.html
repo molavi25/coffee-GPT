@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cafe Griffin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Cafe Griffin</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Welcome to Cafe Griffin</h2>
+      <p>We are proud to offer some of the finest coffee blends in the world. Browse our selection and find the perfect coffee to suit your tastes.</p>
+      <section>
+        <h3>Featured Products</h3>
+        <ul>
+          <li>
+            <div class="product-card">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Coffee 1">
+              <h4>Dark Roast</h4>
+              <p class="price">$12.99</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </li>
+          <li>
+            <div class="product-card">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Coffee 2">
+              <h4>Medium Roast</h4>
+              <p class="price">$11.99</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </li>
+          <li>
+            <div class="product-card">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Coffee 3">
+              <h4>Light Roast</h4>
+              <p class="price">$10.99</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Cafe Griffin. All rights reserved.</p>
+    </footer>
+    <script>
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Add the selected product to the cart
+          console.log('Product added to cart');
+        });
+      });
+    </script>
+  </body>
+</html>
